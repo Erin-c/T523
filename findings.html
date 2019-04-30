@@ -209,7 +209,30 @@
                       <img class="img-fluid" src="img/charts/improve.png" width="50%">
                       <img class="img-fluid" src="img/charts/love.png" width="50%">
                     </div>
-
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="font-weight-bold text-uppercase">Personalized Learning</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                    <img class="img-fluid" src="img/charts/personalized-learning.png">
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <p class="font-weight-bold text-uppercase">Equity</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                  <img class="img-fluid" src="img/charts/equity.png" >
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <p class="font-weight-bold text-uppercase">Pilot</p>
+                  </div>
+                </div>
+                <div class="row">
+                <img class="img-fluid" src="img/charts/pilot.png" >
+              </div>
                     <div class="row">
                       <div class="col-12">
                         <canvas id="densityChart" height="150"></canvas>
@@ -510,7 +533,7 @@
   <script>
   var densityCanvas = document.getElementById("densityChart");
   var densityData = {
-  label: 'Participants who found Coaching Conversations helpful',
+  label: '# of Participants-Coaching Conversations',
   data: [1, 4, 4, 10, 9],
   backgroundColor: 'rgba(75, 192, 192, 0.2)',
   borderColor:'rgba(75, 192, 192, 1)',
@@ -519,7 +542,7 @@
 };
 
 var gravityData = {
-  label: 'Participants who found Summit Sessions useful',
+  label: '# of Participants-Summit Sessions',
   data: [0, 6, 3, 7, 12],
   backgroundColor: 'rgba(54, 162, 235, 0.2)',
   borderColor:'rgba(54, 162, 235, 1)',
@@ -536,7 +559,7 @@ var chartOptions = {
   legend: { display: false },
   title: {
   display: true,
-  text: 'Utility of Summits Sessions versus Coaching Conversations'
+  text: 'Utility of Summits Sessions versus Coaching Conversations (rated on a scale of 1-5)'
   },
   scales: {
     xAxes: [{
