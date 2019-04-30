@@ -199,10 +199,10 @@ a {
   background-color: transparent;
 }
 
-a:hover {
-  color: #224abe;
+/* a:hover {
+  color: inherit;
   text-decoration: underline;
-}
+} */
 
 a:not([href]):not([tabindex]) {
   color: inherit;
@@ -2624,7 +2624,6 @@ textarea.form-control {
 }
 
 .btn:hover {
-  color: #858796;
   text-decoration: none;
 }
 
@@ -2651,13 +2650,12 @@ fieldset:disabled a.btn {
   width=100%;
 }
 
-.btn-link:hover {
-  color: #224abe;
+/* .btn-link:hover {
+  color: inherit;
   text-decoration: underline;
-}
+} */
 
 .btn-link:focus, .btn-link.focus {
-  text-decoration: underline;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -6385,7 +6383,7 @@ a.close.disabled {
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #2653d4 !important;
+  background-color: #inherit !important;
 }
 
 .bg-secondary {
@@ -9959,9 +9957,9 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
   }
-  a:not(.btn) {
+  /* a:not(.btn) {
     text-decoration: underline;
-  }
+  } */
   abbr[title]::after {
     content: " (" attr(title) ")";
   }
