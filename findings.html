@@ -238,7 +238,7 @@
                       <p class="font-weight-bold headers">Surveys</p>
                       <div class="row">
                         <div class="col-12">
-                          <canvas id="myChart4" height="150"></canvas>
+                          <canvas id="densityChart" height="150"></canvas>
                       </div>
                     </div>
                       <p class="font-weight-bold headers">Existing Data</p>
@@ -471,47 +471,50 @@
   </script>
   
   <script>
-  var ctx = document.getElementById('myChart4').getContext('2d');
-  var myChart = new Chart(ctx, {
-      type: 'bar',
-      data: {
-          labels: ['Teachers', 'Students', 'Teachers and Student', 'Teachers and Technology', 'Other'],
-          datasets: [{
-              label: '# of Schools',
-              data: [8, 2, 2, 3, 2],
-              backgroundColor: [
-                  'rgba(255, 99, 132, 0.2)',
-                  'rgba(54, 162, 235, 0.2)',
-                  'rgba(255, 206, 86, 0.2)',
-                  'rgba(75, 192, 192, 0.2)',
-                  'rgba(153, 102, 255, 0.2)'
-              ],
-              borderColor: [
-                  'rgba(255, 99, 132, 1)',
-                  'rgba(54, 162, 235, 1)',
-                  'rgba(255, 206, 86, 1)',
-                  'rgba(75, 192, 192, 1)',
-                  'rgba(153, 102, 255, 1)'
-              ],
-              borderWidth: 1
-          }]
-      },
-      options: {
-        legend: { display: false },
-        title: {
-        display: true,
-        text: 'Who or what is the pilot targeted to?'
-        },
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true,
-                    max: 14
-                }
-            }]
+  var densityCanvas = document.getElementById("densityChart");
+  var densityData = {
+  label: 'Participants who found Coaching Conversations helpful',
+  data: [1, 4, 4, 10, 9],
+  backgroundColor: 'rgba(75, 192, 192, 0.2)',
+  borderColor:'rgba(75, 192, 192, 1)',
+  borderWidth: 1,
+
+};
+
+var gravityData = {
+  label: 'Participants who found Summit Sessions useful',
+  data: [0, 6, 3, 7, 12],
+  backgroundColor: 'rgba(54, 162, 235, 0.2)',
+  borderColor:'rgba(54, 162, 235, 1)',
+  borderWidth: 1,
+
+};
+
+var planetData = {
+  labels: ["1", "2", "3", "4", "5"],
+  datasets: [densityData, gravityData]
+};
+
+var chartOptions = {
+  legend: { display: false },
+  title: {
+  display: true,
+  text: 'Utility of Summits Sessions versus Coaching Conversations'
+  },
+  scales: {
+    xAxes: [{
+        ticks: {
+            beginAtZero: true,
         }
-      }
-  });
+    }]
+  }
+};
+
+var barChart = new Chart(densityCanvas, {
+  type: 'bar',
+  data: planetData,
+  options: chartOptions
+});
   </script>
 
 </body>
