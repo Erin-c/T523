@@ -59,7 +59,7 @@ options: aChartOptions
 
 var pdMethodCanvas = document.getElementById("pd-method");
 var coaching = {
-  label: '# of Participants-Coaching Conversations',
+  label: 'Coaching Conversations',
   data: [1, 4, 4, 10, 9],
   backgroundColor: 'rgba(75, 192, 192, 0.2)',
   borderColor:'rgba(75, 192, 192, 1)',
@@ -67,7 +67,7 @@ var coaching = {
 };
 
 var summit = {
-  label: '# of Participants-Summit Sessions',
+  label: 'Summit Sessions',
   data: [0, 6, 3, 7, 12],
   backgroundColor: 'rgba(54, 162, 235, 0.2)',
   borderColor:'rgba(54, 162, 235, 1)',
