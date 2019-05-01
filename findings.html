@@ -2,103 +2,70 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
   <title>Findings</title>
-
-  <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
-  <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.css" rel="stylesheet">
-
 </head>
 
 <body id="page-top">
-
   <!-- Page Wrapper -->
   <div id="wrapper">
-
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion sidenav" id="accordionSidebar">
-
-      <!-- Sidebar - Brand -->
+      <!-- Sidebar - Logo -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
         <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 50rem;" src="img/maple.png" alt="">
       </a>
-
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
+      <!-- Nav Items -->
+      <li class="nav-item">
         <a class="nav-link" href="index.html">
           <i class="fas fa-home"></i>
           <span>Home</span></a>
       </li>
-      
-      <!-- Divider -->
       <hr class="sidebar-divider">
-
-      <!-- Nav Item - Evaluation Questions -->
       <li class="nav-item">
         <a class="nav-link" href="evaluation-questions.html">
           <i class="fas fa-question"></i>
           <span>Questions</span></a>
       </li>
-
-      <!-- Nav Item - Methods -->
       <li class="nav-item">
         <a class="nav-link" href="methods.html">
           <i class="far fa-clipboard"></i>
           <span>Methods</span></a>
       </li>
-      
-      <!-- Nav Item - Findings -->
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="findings.html">
           <i class="fas fa-file-contract"></i>
           <span>Findings</span></a>
       </li>
-
     </ul>
     <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column main">
-
-      <!-- Main Content -->
       <div id="content">
-
-          <!-- Sidebar Toggle (Topbar) -->
-          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-            <i class="fa fa-bars"></i>
-          </button>
-
-        <!-- Begin Page Content -->
         <div class="container-fluid">
-
-          <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Findings</h1>
           </div>
-
-
+          <!-- Interviews -->
           <div class="row">
-            <div class="accordion wide" id="accordionExample">
+            <div class="accordion wide" id="interviews">
               <div class="card shadow border-left-danger mb-4 rounded">
-                <div class="card-header" id="headingOne">
+                <div class="card-header" id="interview-heading">
                   <h2 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseInterview" aria-expanded="true" aria-controls="collapseInterview">
                       <p class="font-weight-bold text-danger text-uppercase headers">Interviews</p>
                     </button>
                   </h2>
                 </div>
-                
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div id="collapseInterview" class="collapse" aria-labelledby="interview-heading" data-parent="#interviews">
                   <div class="card-body">
                     <p> All three participants interviewed mentioned that the <strong>quick support</strong> provided by the mentorship component of MISL was useful in that it provided them with the affirmation to move forward with their projects.
                     </p>
@@ -133,27 +100,29 @@
                       </p>
                       <footer class="blockquote-footer"><cite>Participant C</cite></footer>
                     </blockquote>
+                    <!-- word cloud image -->
                     <img class="img-fluid px-3 px-sm-4 mt-3 mb-4 center" style="width: 50rem;" src="img/charts/word_cloud.png" alt="">
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- End of Interviews -->
+          <!-- Surveys -->
           <div class="row">
-              <div class="accordion wide" id="accordionExample2">
-                <div class="card shadow border-left-info mb-4 rounded">
-                  <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <p class="font-weight-bold text-info text-uppercase headers">Surveys</p>
-                      </button>
-                    </h2>
-                  </div>
-                  
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample2">
-                    <div class="card-body"> 
-                      <ul>
-                        <li>Participant Profile</li>
+            <div class="accordion wide" id="surveys">
+              <div class="card shadow border-left-info mb-4 rounded">
+                <div class="card-header" id="headingSurveys">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSurveys" aria-expanded="false" aria-controls="collapseSurveys">
+                      <p class="font-weight-bold text-info text-uppercase headers">Surveys</p>
+                    </button>
+                  </h2>
+                </div>    
+                <div id="collapseSurveys" class="collapse" aria-labelledby="headingSurveys" data-parent="#surveys">
+                  <div class="card-body"> 
+                    <ul>
+                      <li>Participant Profile</li>
                         <ul>
                           <li>Less than 50% were teachers. The rest were a diverse combination of roles spanning principals, vice principals etc.</li>
                           <li>More than 70% have been working for 10 years or more. The surveyed cohort clearly has immense experience in the system.</li>
@@ -161,51 +130,56 @@
                           <li>There is seemingly a drop in participants in the last session. Only 7 participants have attended 3 sessions.</li>
                           <li>Most participants (21/28) have attended 4 or more coaching conversations. </li>
                         </ul>
-                        <li>Utility Profile</li>
+                      <li>Utility Profile</li>
                         <ul>
                           <li>More than half of those surveyed (19/28 participants) viewed summit sessions as useful.</li>
                           <li>Same number that viewed summit sessions useful (19/28) also thought coaching conversations were useful.</li>
                         </ul>
-                        <li>Excitement Profile</li>
+                      <li>Excitement Profile</li>
                         <ul>
                           <li>More than half (18/28 participants) said that they were still excited about participation</li>
                           <li>17/28 participants said that they were either very excited or extremely excited to attend the next coaching conversation.</li>
                           <li>In both cases, at least 5 participants expressed that they were not excited for the next session / conversation.</li>
-                      </ul>
+                        </ul>
                       <li>Pilot Projects</li>
-                      <ul>
-                        <li>All participants indicated that they had started working on the pilot project.</li>
-                        <li>17/28 participants indicated that their project has moved from design to implementation and beyond.</li>
-                        <li>11 participants indicated that their project is in either the ideation or design stage.</li>
-                        <li>Most participants 27/28 either said they agreed or strongly agreed that they received support from their team for their project. </li>
-                        <li>19/28 participants either said they agreed or strongly agreed that were confident in launching a larger project.</li>
-                        <li>23/28 participants either agreed or strongly agreed that they were able to implement the projects in their school.</li>  
-                      </ul>
+                        <ul>
+                          <li>All participants indicated that they had started working on the pilot project.</li>
+                          <li>17/28 participants indicated that their project has moved from design to implementation and beyond.</li>
+                          <li>11 participants indicated that their project is in either the ideation or design stage.</li>
+                          <li>Most participants 27/28 either said they agreed or strongly agreed that they received support from their team for their project. </li>
+                          <li>19/28 participants either said they agreed or strongly agreed that were confident in launching a larger project.</li>
+                          <li>23/28 participants either agreed or strongly agreed that they were able to implement the projects in their school.</li>  
+                        </ul>
                       <li>Education Equity</li>
-                      <ul>
-                        <li>Understanding of equity in education firmly rooted by those who responded, 24/28 participants.</li>
-                        <li>23/28 felt confident to agree or strongly agree that they are capable of teaching the concept to others in their school.</li>
-                      </ul>
+                        <ul>
+                          <li>Understanding of equity in education firmly rooted by those who responded, 24/28 participants.</li>
+                          <li>23/28 felt confident to agree or strongly agree that they are capable of teaching the concept to others in their school.</li>
+                        </ul>
                       <li>Personalized Learning</li>
-                      <ul>
-                        <li>Understanding of personalized learning also high (24/28 participants.)</li>
-                        <li>21/28 felt confident to agree or strongly agree that they are capable of teaching the concept to others in their school.</li>
-                      </ul>
+                        <ul>
+                          <li>Understanding of personalized learning also high (24/28 participants.)</li>
+                          <li>21/28 felt confident to agree or strongly agree that they are capable of teaching the concept to others in their school.</li>
+                        </ul>
+                        <div class="row">
+                          <div class="col-12">
+                            <canvas id="personalized" height="150"></canvas>
+                          </div>
+                        </div>
                       <li>Qualitative Profile</li>
-                      <ul>
-                        <li>Text entry comments included many saying they appreciated the support and collaboration from MISL, only one comment centered on personalized learning</li>
-                        <li>The key ideas around what should be improved were again people saying that seeing other school's examples of personalized learning projects was useful, also more text entry indicating that expectations from MISL at the start of the school were not very clear</li>
-                      </ul>
-                      </ul> 
-                      <div class="row">
-                        <div class="col-6">
-                          <p class="font-weight-bold text-uppercase">What can be improved about the MISL program?</p>
-                        </div>
-                        <div class="col-6">
-                          <p class="font-weight-bold text-uppercase">What did participants like about the MISL program?</p>
-                        </div>
+                        <ul>
+                          <li>Text entry comments included many saying they appreciated the support and collaboration from MISL, only one comment centered on personalized learning</li>
+                          <li>The key ideas around what should be improved were again people saying that seeing other school's examples of personalized learning projects was useful, also more text entry indicating that expectations from MISL at the start of the school were not very clear</li>
+                        </ul>
+                    </ul> 
+                    <div class="row">
+                      <div class="col-6">
+                        <p class="font-weight-bold text-uppercase">What can be improved about the MISL program?</p>
                       </div>
-                      <div class="row">
+                      <div class="col-6">
+                        <p class="font-weight-bold text-uppercase">What did participants like about the MISL program?</p>
+                      </div>
+                    </div>
+                    <div class="row">
                       <img class="img-fluid" src="img/charts/improve.png" width="50%">
                       <img class="img-fluid" src="img/charts/love.png" width="50%">
                     </div>
@@ -215,320 +189,99 @@
                       </div>
                     </div>
                     <div class="row">
-                    <img class="img-fluid" src="img/charts/personalized-learning.png">
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <p class="font-weight-bold text-uppercase">Equity</p>
+                      <img class="img-fluid" src="img/charts/personalized-learning.png">
                     </div>
-                  </div>
-                  <div class="row">
-                  <img class="img-fluid" src="img/charts/equity.png" >
-                </div>
-                <div class="row">
-                  <div class="col-12">
-                    <p class="font-weight-bold text-uppercase">Pilot</p>
-                  </div>
-                </div>
-                <div class="row">
-                <img class="img-fluid" src="img/charts/pilot.png" >
-              </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="font-weight-bold text-uppercase">Equity</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <img class="img-fluid" src="img/charts/equity.png" >
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="font-weight-bold text-uppercase">Pilot</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <img class="img-fluid" src="img/charts/pilot.png" >
+                    </div>
                     <div class="row">
                       <div class="col-12">
                         <canvas id="densityChart" height="150"></canvas>
-                    </div>
-                  </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+          <!-- End of Surveys -->
+          <!-- Existing Data -->
             <div class="row">
-              <div class="accordion wide" id="accordionExample3">
+              <div class="accordion wide" id="existingdata">
                 <div class="card shadow border-left-warning mb-4 rounded">
-                  <div class="card-header" id="headingThree">
+                  <div class="card-header" id="headingExistingData">
                     <h2 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseExistingData" aria-expanded="false" aria-controls="collapseExistingData">
                         <p class="font-weight-bold text-warning text-uppercase headers">Existing Data</p>
                       </button>
                     </h2>
                   </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample3">
+                  <div id="collapseExistingData" class="collapse" aria-labelledby="headingExistingData" data-parent="#existingdata">
                     <div class="card-body">
                       <p>The existing data showed that <strong>14 of the 17 schools</strong> indicated that their <strong>reason for implementing a personalized learning solution was to better serve students</strong>, while <strong>only 2 schools explicitly wrote up a pilot that directly addressed just their student body</strong> and 6 schools talked addressed students as a part of their pilot. 11 schools did not mention students at all in their actual solution or implementation plans. One possible interpretation of this is that these programs are new to personalized learning and are addressing change from a professional development standpoint. This could indicate the exposure a school has had to personalized learning, since only 3 schools explicitly indicated that they had participated in personalized learning professional development.</p>
-
-                      <p>Our stakeholder indicated that equity and accessibility were important goals of their program. Upon analyzing the data, <strong>only 4 schools used terms like equity, equality, access, and accessibility more than 4 times in their pilot implementation reports</strong>, one interpretation is that most schools were focused more on issues that were unique to their schools, which did not necessarily overlap with issues that the MISL program emphasized. Another interpretation of this could be that participants were more focused at the problems at hand that could be solved in the short term, instead of tackling long term problems like equity and accessibility.</p>
-
-                      <p>This instrument also yielded participants’ understanding of personalized learning. We coded for words and themes around student choice, student voice, student autonomy, etc. <strong>11 schools used these words and themes more than 3 times in their report</strong>. One interpretation of this is that these are the common ways people talk about personalized learning and implementing such solutions. Schools seemed to have a good grasp of actual use of these terms and themes.</p>
+  
                       <div class="row">
                         <div class="col-6">
-                          <canvas id="myChart" height="250"></canvas>
+                          <canvas id="reason-pilot" height="250"></canvas>
+                        </div>
+                        <div class="col-6">
+                          <canvas id="pilot-target" height="300"></canvas>
+                        </div>
                       </div>
-                      <div class="col-6">
-                        <canvas id="myChart1" height="300"></canvas>
-                    </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-12">
-                        <canvas id="myChart2" height="150"></canvas>
-                    </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-12">
-                        <canvas id="myChart3" height="150"></canvas>
-                    </div>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- <div class="row">
-              <div class="accordion wide" id="accordionExample4">
-                <div class="card shadow border-left-success mb-4 rounded">
-                  <div class="card-header" id="headingFour">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                        <p class="font-weight-bold text-success text-uppercase headers">Data Visualization</p>
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample4">
-                    <div class="card-body">
-                      <p class="font-weight-bold headers">Surveys</p>
+                      <br>
+                      <p>Our stakeholder indicated that equity and accessibility were important goals of their program. Upon analyzing the data, <strong>only 4 schools used terms like equity, equality, access, and accessibility more than 4 times in their pilot implementation reports</strong>, one interpretation is that most schools were focused more on issues that were unique to their schools, which did not necessarily overlap with issues that the MISL program emphasized. Another interpretation of this could be that participants were more focused at the problems at hand that could be solved in the short term, instead of tackling long term problems like equity and accessibility.</p>
+                      
                       <div class="row">
                         <div class="col-12">
-                          <canvas id="densityChart" height="150"></canvas>
+                          <canvas id="equity" height="150"></canvas>
+                        </div>
                       </div>
-                    </div>
-                      <p class="font-weight-bold headers">Existing Data</p>
+                      <br>
+                      <p>This instrument also yielded participants’ understanding of personalized learning. We coded for words and themes around student choice, student voice, student autonomy, etc. <strong>11 schools used these words and themes more than 3 times in their report</strong>. One interpretation of this is that these are the common ways people talk about personalized learning and implementing such solutions. Schools seemed to have a good grasp of actual use of these terms and themes.</p>  
                       <div class="row">
-                        <div class="col-6">
-                          <canvas id="myChart" height="250"></canvas>
+                        <div class="col-12">
+                          <canvas id="student-choice" height="150"></canvas>
+                        </div>
                       </div>
-                      <div class="col-6">
-                        <canvas id="myChart1" height="300"></canvas>
-                    </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-12">
-                        <canvas id="myChart2" height="150"></canvas>
-                    </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-12">
-                        <canvas id="myChart3" height="150"></canvas>
-                    </div>
-                    </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div> -->
-          </div>
             </div>
-        
-
+            <!-- End of Existing Data -->
           </div>
-          <!-- /.container-fluid -->
-
         </div>
-        <!-- End of Main Content -->
-
       </div>
       <!-- End of Content Wrapper -->
-
     </div>
     <!-- End of Page Wrapper -->
-
-    <!-- Scroll to Top Button-->
+  
+    <!-- Scroll to Top Button -->
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fas fa-angle-up"></i>
     </a>
 
-  <!-- Bootstrap core JavaScript-->
+  <!-- JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Page level plugins -->
   <script src="vendor/chart.js/Chart.min.js"></script>
+  <script src="js/charts/existing-data-charts.js"></script>
+  
 
-  <!-- Page level custom scripts -->
-  <script src="js/demo/chart-area-demo.js"></script>
-  <script src="js/demo/chart-pie-demo.js"></script>
-  <script src="js/demo/chart-bar-demo.js"></script>
-  <!-- <script src="js/sb-admin-2.js"></script> -->
   
-  <script>
-  var ctx = document.getElementById('myChart').getContext('2d');
-  var myChart = new Chart(ctx, {
-      type: 'bar',
-      data: {
-          labels: ['Teachers', 'Students', 'Teachers and Students', 'Other'],
-          datasets: [{
-              label: '# of Schools',
-              data: [0, 14, 2, 1],
-              backgroundColor: [
-                  'rgba(255, 99, 132, 0.2)',
-                  'rgba(54, 162, 235, 0.2)',
-                  'rgba(255, 206, 86, 0.2)',
-                  'rgba(75, 192, 192, 0.2)'
-              ],
-              borderColor: [
-                  'rgba(255, 99, 132, 1)',
-                  'rgba(54, 162, 235, 1)',
-                  'rgba(255, 206, 86, 1)',
-                  'rgba(75, 192, 192, 1)'
-              ],
-              borderWidth: 1
-          }]
-      },
-      options: {
-        legend: { display: false },
-        title: {
-        display: true,
-        text: 'Who or what is the reason for you are here?'
-      }
-      }
-  });
-  </script>
-  
-  <script>
-  var ctx = document.getElementById('myChart1').getContext('2d');
-  var myChart = new Chart(ctx, {
-      type: 'bar',
-      data: {
-          labels: ['Teachers', 'Students', 'Teachers and Students', 'Teachers and Technology', 'Other'],
-          datasets: [{
-              label: '# of Schools',
-              data: [8, 2, 2, 3, 2],
-              backgroundColor: [
-                  'rgba(255, 99, 132, 0.2)',
-                  'rgba(54, 162, 235, 0.2)',
-                  'rgba(255, 206, 86, 0.2)',
-                  'rgba(75, 192, 192, 0.2)',
-                  'rgba(153, 102, 255, 0.2)'
-              ],
-              borderColor: [
-                  'rgba(255, 99, 132, 1)',
-                  'rgba(54, 162, 235, 1)',
-                  'rgba(255, 206, 86, 1)',
-                  'rgba(75, 192, 192, 1)',
-                  'rgba(153, 102, 255, 1)'
-              ],
-              borderWidth: 1
-          }]
-      },
-      options: {
-        legend: { display: false },
-        title: {
-        display: true,
-        text: 'Who or what is the pilot targeted to?'
-        },
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true,
-                    max: 14
-                }
-            }]
-        }
-      }
-  });
-  </script>
-  
-  <script>
-  var ctx = document.getElementById('myChart2').getContext('2d');
-  var myChart = new Chart(ctx, {
-      type: 'horizontalBar',
-      data: {
-          labels: ['None', '1 time', '2 times', '3 times', '4 times', '5 times'],
-          datasets: [{
-              label: '# of Schools',
-              data: [4, 7, 2, 0, 2, 2],
-              backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-              ],
-              borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-              ],
-              borderWidth: 1
-          }]
-      },
-      options: {
-        legend: { display: false },
-        title: {
-        display: true,
-        text: 'Occurences of themes around Equity and Access'
-        },
-        scales: {
-            xAxes: [{
-                ticks: {
-                    beginAtZero: true,
-                }
-            }]
-        }
-      }
-  });
-  </script>
-  
-  <script>
-  var ctx = document.getElementById('myChart3').getContext('2d');
-  var myChart = new Chart(ctx, {
-      type: 'horizontalBar',
-      data: {
-          labels: ['None', '1 time', '2 times', '3 times', '4 times', '5 or more times'],
-          datasets: [{
-              label: '# of Schools',
-              data: [2, 2, 1, 2, 3, 6],
-              backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-              ],
-              borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-              ],
-              borderWidth: 1
-          }]
-      },
-      options: {
-        legend: { display: false },
-        title: {
-        display: true,
-        text: 'Occurences of terms and themes around student choice'
-        },
-        scales: {
-            xAxes: [{
-                ticks: {
-                    beginAtZero: true,
-                }
-            }]
-        }
-      }
-  });
-  </script>
   
   <script>
   var densityCanvas = document.getElementById("densityChart");
@@ -576,6 +329,107 @@ var barChart = new Chart(densityCanvas, {
   options: chartOptions
 });
   </script>
+  
+  <script>
+  		var barChartData = {labels: ['I understand personalized learning', 'I am capable of teaching personalized learning to others'],
+  			datasets: [{
+  				label: 'Strongly Agree',
+  				backgroundColor: 'rgba(153, 102, 255, 0.2)',
+          borderColor: 'rgba(75, 192, 192, 1)',
+          borderWidth: 1,
+  				data: [17, 9]
+  			}, {
+  				label: 'Agree',
+  				backgroundColor: 'rgba(54, 162, 235, 0.2)',
+          borderColor:'rgba(54, 162, 235, 1)',
+          borderWidth: 1,
+  				data: [7,12]
+  			}, {
+  				label: 'Neutral',
+  				backgroundColor: 'rgba(255, 206, 86, 0.2)',
+          borderColor:'rgba(255, 206, 86, 1)',
+          borderWidth: 1,
+  				data: [2,5]
+  			}, {
+  				label: 'Disagree',
+  				backgroundColor: 'rgba(255, 159, 64, 0.2)',
+          borderColor:'rgba(255, 159, 64, 1)',
+          borderWidth: 1,
+  				data: [1,1]
+  			},{
+  				label: 'Strongly Disagree',
+          backgroundColor:'rgba(255, 99, 132, 0.2)',
+          borderColor:'rgba(255, 99, 132, 1)',
+          borderWidth: 1,
+  				data: [1,1]
+  			}]
+  		};
+  			var ctx = document.getElementById('personalized').getContext('2d');
+        var stackedChart = new Chart(ctx, {
+            type: 'horizontalBar',
+            data: {
+                labels: ['None', '1 time', '2 times', '3 times', '4 times', '5 or more times'],
+                datasets: [{
+                    label: '# of Schools',
+                    data: [2, 2, 1, 2, 3, 6],
+                    backgroundColor: [
+                      'rgba(255, 99, 132, 0.2)',
+                      'rgba(54, 162, 235, 0.2)',
+                      'rgba(255, 206, 86, 0.2)',
+                      'rgba(75, 192, 192, 0.2)',
+                      'rgba(153, 102, 255, 0.2)',
+                      'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                      'rgba(255, 99, 132, 1)',
+                      'rgba(54, 162, 235, 1)',
+                      'rgba(255, 206, 86, 1)',
+                      'rgba(75, 192, 192, 1)',
+                      'rgba(153, 102, 255, 1)',
+                      'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+        
+        
+        
+        
+        
+        
+        // new Chart(ctx, {
+  			// 	type: 'horizontalBar',
+  			// 	data: barChartData,
+  			// 	options: {
+  			// 		title: {
+  			// 			display: true,
+  			// 			text: 'Personalized Learning'
+  			// 		},
+  			// 		tooltips: {
+  			// 			mode: 'index',
+  			// 			intersect: false
+  			// 		},
+  			// 		responsive: true,
+  			// 		scales: {
+  			// 			xAxes: [{
+  			// 				stacked: true,
+  			// 			},ticks: {
+        //           beginAtZero: true,
+        //       }],
+  			// 			yAxes: [{
+  			// 				stacked: true
+  			// 			},ticks: {
+        //           beginAtZero: true,
+        //       }]
+  			// 		}
+  			// 	}
+  			// });
+        // 
+  			// 	});
+  			// });
+
+  		});
+  	</script>
 
 </body>
 
