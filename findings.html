@@ -130,17 +130,36 @@
                           <li>There is seemingly a drop in participants in the last session. Only 7 participants have attended 3 sessions.</li>
                           <li>Most participants (21/28) have attended 4 or more coaching conversations. </li>
                         </ul>
+                        <br>
+                        <div class="row">
+                          <div class="col-12">
+                            <canvas id="attendance" height="100"></canvas>
+                          </div>
+                        </div>
                       <li>Utility Profile</li>
                         <ul>
                           <li>More than half of those surveyed (19/28 participants) viewed summit sessions as useful.</li>
                           <li>Same number that viewed summit sessions useful (19/28) also thought coaching conversations were useful.</li>
                         </ul>
+                        <br>
+                        <div class="row">
+                          <div class="col-12">
+                            <canvas id="pd-method" height="100"></canvas>
+                          </div>
+                        </div>
+                        <br>
                       <li>Excitement Profile</li>
                         <ul>
                           <li>More than half (18/28 participants) said that they were still excited about participation</li>
                           <li>17/28 participants said that they were either very excited or extremely excited to attend the next coaching conversation.</li>
                           <li>In both cases, at least 5 participants expressed that they were not excited for the next session / conversation.</li>
                         </ul>
+                        <br>
+                        <div class="row">
+                          <div class="col-12">
+                            <canvas id="excitement" height="100"></canvas>
+                          </div>
+                        </div>
                       <li>Pilot Projects</li>
                         <ul>
                           <li>All participants indicated that they had started working on the pilot project.</li>
@@ -150,11 +169,21 @@
                           <li>19/28 participants either said they agreed or strongly agreed that were confident in launching a larger project.</li>
                           <li>23/28 participants either agreed or strongly agreed that they were able to implement the projects in their school.</li>  
                         </ul>
+                        <div class="row">
+                          <div class="col-12">
+                            <canvas id="pilotsurvey" height="100"></canvas>
+                          </div>
+                        </div>
                       <li>Education Equity</li>
                         <ul>
                           <li>Understanding of equity in education firmly rooted by those who responded, 24/28 participants.</li>
                           <li>23/28 felt confident to agree or strongly agree that they are capable of teaching the concept to others in their school.</li>
                         </ul>
+                        <div class="row">
+                          <div class="col-12">
+                            <canvas id="equitysurvey" height="75"></canvas>
+                          </div>
+                        </div>
                       <li>Personalized Learning</li>
                         <ul>
                           <li>Understanding of personalized learning also high (24/28 participants.)</li>
@@ -162,56 +191,197 @@
                         </ul>
                         <div class="row">
                           <div class="col-12">
-                            <canvas id="personalized" height="150"></canvas>
+                            <canvas id="personalizedLearning" height="75"></canvas>
                           </div>
                         </div>
                       <li>Qualitative Profile</li>
                         <ul>
                           <li>Text entry comments included many saying they appreciated the support and collaboration from MISL, only one comment centered on personalized learning</li>
+                          <br>
+                          <div class="row">
+                            <div class="col-12">
+                              <p class="font-weight-bold text-uppercase" style="text-align: center;">What did you like about the MISL program? (n=28)</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <table class="table table-borderless table-hover">
+                              <thead>
+                                <tr>
+                                  <th scope="col" colspan="2" ># of Participants</th>
+                                  <th scope="col" >Comment</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">11</th>
+                                  <td>
+                                  <i class="fas fa-user fa-2x"></i>
+                                  <i class="fas fa-user fa-2x"></i>
+                                  <i class="fas fa-user fa-2x"></i>
+                                  <i class="fas fa-user fa-2x"></i>
+                                  <i class="fas fa-user fa-2x"></i>
+                                  <i class="fas fa-user fa-2x"></i>
+                                  <i class="fas fa-user fa-2x"></i>
+                                  <i class="fas fa-user fa-2x"></i>
+                                  <i class="fas fa-user fa-2x"></i>
+                                  <i class="fas fa-user fa-2x"></i>
+                                  <i class="fas fa-user fa-2x"></i>
+                                </td>
+                                  <td>Collaboration</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">6</th>
+                                  <td>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                  </td>
+                                  <td>MISL support</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                  </td>
+                                  <td>New ideas/change</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                  </td>
+                                  <td>Tailored structures</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                  </td>
+                                  <td>Not Sure</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>
+                                    <i class="fas fa-user fa-2x"></i>
+                                  </td>
+                                  <td>Focus on personalized learning</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>
+                                    <i class="fas fa-user fa-2x"></i>
+                                  </td>
+                                  <td>New experiences</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>
+                                    <i class="fas fa-user fa-2x"></i>
+                                  </td>
+                                  <td>Student centric</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                           <li>The key ideas around what should be improved were again people saying that seeing other school's examples of personalized learning projects was useful, also more text entry indicating that expectations from MISL at the start of the school were not very clear</li>
+                          <br>
+                          <div class="row">
+                            <div class="col-12">
+                              <p class="font-weight-bold text-uppercase" style="text-align: center;">What can be improved about the MISL program? (n=28)</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <table class="table table-borderless table-hover">
+                              <thead>
+                                <tr>
+                                  <th scope="col" colspan="2" ># of Participants</th>
+                                  <th scope="col" >Comment</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">6</th>
+                                  <td>
+                                  <i class="fas fa-user fa-2x"></i>
+                                  <i class="fas fa-user fa-2x"></i>
+                                  <i class="fas fa-user fa-2x"></i>
+                                  <i class="fas fa-user fa-2x"></i>
+                                  <i class="fas fa-user fa-2x"></i>
+                                  <i class="fas fa-user fa-2x"></i>
+                                </td>
+                                  <td>See each other's projects and model schools more</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">4</th>
+                                  <td>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                  </td>
+                                  <td>Clear expectations at the beginning of the year</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">4</th>
+                                  <td>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                  </td>
+                                  <td>More time to work on projects</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">4</th>
+                                  <td>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                  </td>
+                                  <td>Better tailored support during summits and coaching conversations</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">4</th>
+                                  <td>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                  </td>
+                                  <td>Nothing</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                  </td>
+                                  <td>Not sure</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                    <i class="fas fa-user fa-2x"></i>
+                                  </td>
+                                  <td>Miscellaneous</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                         </ul>
-                    </ul> 
-                    <div class="row">
-                      <div class="col-6">
-                        <p class="font-weight-bold text-uppercase">What can be improved about the MISL program?</p>
-                      </div>
-                      <div class="col-6">
-                        <p class="font-weight-bold text-uppercase">What did participants like about the MISL program?</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <img class="img-fluid" src="img/charts/improve.png" width="50%">
-                      <img class="img-fluid" src="img/charts/love.png" width="50%">
-                    </div>
-                    <div class="row">
-                      <div class="col-12">
-                        <p class="font-weight-bold text-uppercase">Personalized Learning</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <img class="img-fluid" src="img/charts/personalized-learning.png">
-                    </div>
-                    <div class="row">
-                      <div class="col-12">
-                        <p class="font-weight-bold text-uppercase">Equity</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <img class="img-fluid" src="img/charts/equity.png" >
-                    </div>
-                    <div class="row">
-                      <div class="col-12">
-                        <p class="font-weight-bold text-uppercase">Pilot</p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <img class="img-fluid" src="img/charts/pilot.png" >
-                    </div>
-                    <div class="row">
-                      <div class="col-12">
-                        <canvas id="densityChart" height="150"></canvas>
-                      </div>
-                    </div>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -275,161 +445,12 @@
     </a>
 
   <!-- JavaScript -->
+  <script src="http://d3js.org/d3.v3.min.js"></script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/chart.js/Chart.min.js"></script>
   <script src="js/charts/existing-data-charts.js"></script>
-  
-
-  
-  
-  <script>
-  var densityCanvas = document.getElementById("densityChart");
-  var densityData = {
-  label: '# of Participants-Coaching Conversations',
-  data: [1, 4, 4, 10, 9],
-  backgroundColor: 'rgba(75, 192, 192, 0.2)',
-  borderColor:'rgba(75, 192, 192, 1)',
-  borderWidth: 1,
-
-};
-
-var gravityData = {
-  label: '# of Participants-Summit Sessions',
-  data: [0, 6, 3, 7, 12],
-  backgroundColor: 'rgba(54, 162, 235, 0.2)',
-  borderColor:'rgba(54, 162, 235, 1)',
-  borderWidth: 1,
-
-};
-
-var planetData = {
-  labels: ["1", "2", "3", "4", "5"],
-  datasets: [densityData, gravityData]
-};
-
-var chartOptions = {
-  legend: { display: false },
-  title: {
-  display: true,
-  text: 'Utility of Summits Sessions versus Coaching Conversations (rated on a scale of 1-5)'
-  },
-  scales: {
-    xAxes: [{
-        ticks: {
-            beginAtZero: true,
-        }
-    }]
-  }
-};
-
-var barChart = new Chart(densityCanvas, {
-  type: 'bar',
-  data: planetData,
-  options: chartOptions
-});
-  </script>
-  
-  <script>
-  		var barChartData = {labels: ['I understand personalized learning', 'I am capable of teaching personalized learning to others'],
-  			datasets: [{
-  				label: 'Strongly Agree',
-  				backgroundColor: 'rgba(153, 102, 255, 0.2)',
-          borderColor: 'rgba(75, 192, 192, 1)',
-          borderWidth: 1,
-  				data: [17, 9]
-  			}, {
-  				label: 'Agree',
-  				backgroundColor: 'rgba(54, 162, 235, 0.2)',
-          borderColor:'rgba(54, 162, 235, 1)',
-          borderWidth: 1,
-  				data: [7,12]
-  			}, {
-  				label: 'Neutral',
-  				backgroundColor: 'rgba(255, 206, 86, 0.2)',
-          borderColor:'rgba(255, 206, 86, 1)',
-          borderWidth: 1,
-  				data: [2,5]
-  			}, {
-  				label: 'Disagree',
-  				backgroundColor: 'rgba(255, 159, 64, 0.2)',
-          borderColor:'rgba(255, 159, 64, 1)',
-          borderWidth: 1,
-  				data: [1,1]
-  			},{
-  				label: 'Strongly Disagree',
-          backgroundColor:'rgba(255, 99, 132, 0.2)',
-          borderColor:'rgba(255, 99, 132, 1)',
-          borderWidth: 1,
-  				data: [1,1]
-  			}]
-  		};
-  			var ctx = document.getElementById('personalized').getContext('2d');
-        var stackedChart = new Chart(ctx, {
-            type: 'horizontalBar',
-            data: {
-                labels: ['None', '1 time', '2 times', '3 times', '4 times', '5 or more times'],
-                datasets: [{
-                    label: '# of Schools',
-                    data: [2, 2, 1, 2, 3, 6],
-                    backgroundColor: [
-                      'rgba(255, 99, 132, 0.2)',
-                      'rgba(54, 162, 235, 0.2)',
-                      'rgba(255, 206, 86, 0.2)',
-                      'rgba(75, 192, 192, 0.2)',
-                      'rgba(153, 102, 255, 0.2)',
-                      'rgba(255, 159, 64, 0.2)'
-                    ],
-                    borderColor: [
-                      'rgba(255, 99, 132, 1)',
-                      'rgba(54, 162, 235, 1)',
-                      'rgba(255, 206, 86, 1)',
-                      'rgba(75, 192, 192, 1)',
-                      'rgba(153, 102, 255, 1)',
-                      'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-        
-        
-        
-        
-        
-        
-        // new Chart(ctx, {
-  			// 	type: 'horizontalBar',
-  			// 	data: barChartData,
-  			// 	options: {
-  			// 		title: {
-  			// 			display: true,
-  			// 			text: 'Personalized Learning'
-  			// 		},
-  			// 		tooltips: {
-  			// 			mode: 'index',
-  			// 			intersect: false
-  			// 		},
-  			// 		responsive: true,
-  			// 		scales: {
-  			// 			xAxes: [{
-  			// 				stacked: true,
-  			// 			},ticks: {
-        //           beginAtZero: true,
-        //       }],
-  			// 			yAxes: [{
-  			// 				stacked: true
-  			// 			},ticks: {
-        //           beginAtZero: true,
-        //       }]
-  			// 		}
-  			// 	}
-  			// });
-        // 
-  			// 	});
-  			// });
-
-  		});
-  	</script>
+  <script src="js/charts/survey-charts.js"></script>
 
 </body>
 
