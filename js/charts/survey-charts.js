@@ -1,10 +1,58 @@
 Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#858796';
+
+// experience
+var experiencectx = document.getElementById('experience').getContext('2d');
+
+var experienceData = {
+  label:'# of participants',
+  data: [3,5,10,10],
+  backgroundColor: [
+    'rgba(255, 99, 132, 0.2)',
+    'rgba(54, 162, 235, 0.2)',
+    'rgba(255, 206, 86, 0.2)',
+    'rgba(75, 192, 192, 0.2)'
+  ],
+  borderColor: [
+    'rgba(255, 99, 132, 1)',
+    'rgba(54, 162, 235, 1)',
+    'rgba(255, 206, 86, 1)',
+    'rgba(75, 192, 192, 1)'
+  ],
+  borderWidth: 1,
+};
+
+var experienceYears = {
+  labels: [
+    '0-5 years',
+    '6-10 years',
+    '11-15 years',
+    '16+ years'],
+  datasets: [experienceData]
+};
+
+var exoptions = {
+  legend: {
+  position: 'bottom'
+  },				
+  title: {
+            display: true,
+            text: "Participants' Years of Experience (n=28)"
+          }
+}
+
+var pieChart = new Chart(experiencectx, {
+type: 'pie',
+data: experienceYears,
+options: exoptions
+});
+
+
 // attendance
 
 var attendanceCanvas = document.getElementById("attendance");
 var aCoaching = {
-  label: 'Coaching Conversations',
+  label:'Coaching Conversations',
   data: [0, 3, 4, 6, 9, 3, 3],
   backgroundColor: 'rgba(75, 192, 192, 0.2)',
   borderColor:'rgba(75, 192, 192, 1)',
@@ -59,7 +107,7 @@ options: aChartOptions
 
 var pdMethodCanvas = document.getElementById("pd-method");
 var coaching = {
-  label: ' Coaching Conversations',
+  label:' Coaching Conversations',
   data: [1, 4, 4, 10, 9],
   backgroundColor: 'rgba(75, 192, 192, 0.2)',
   borderColor:'rgba(75, 192, 192, 1)',
@@ -67,7 +115,7 @@ var coaching = {
 };
 
 var summit = {
-  label: 'Summit Sessions',
+  label:'Summit Sessions',
   data: [0, 6, 3, 7, 12],
   backgroundColor: 'rgba(54, 162, 235, 0.2)',
   borderColor:'rgba(54, 162, 235, 1)',
@@ -85,7 +133,7 @@ position: 'bottom'
 },
 title: {
 display: true,
-text: 'Utility of Summits Sessions versus Coaching Conversations rated on a scale of 1-5 (n=28)'
+text:'Utility of Summits Sessions versus Coaching Conversations rated on a scale of 1-5 (n=28)'
 },
 scales: {
   xAxes: [{
@@ -107,7 +155,7 @@ options: chartOptions
 
 var excitementCanvas = document.getElementById("excitement");
 var eCoaching = {
-  label: 'Coaching Conversations',
+  label:'Coaching Conversations',
   data: [5, 2, 4, 10, 7],
   backgroundColor: 'rgba(75, 192, 192, 0.2)',
   borderColor:'rgba(75, 192, 192, 1)',
@@ -352,9 +400,3 @@ var pilotData = {
 				}
 			}
 		});
-
-// Qualitative - like
-
-
-
-
