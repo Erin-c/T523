@@ -5,7 +5,7 @@ Chart.defaults.global.defaultFontColor = '#858796';
 var attendanceCanvas = document.getElementById("attendance");
 var aCoaching = {
   label: 'Coaching Conversations',
-  data: [0, 3, 6, 9, 3, 3],
+  data: [0, 3, 4, 6, 9, 3, 3],
   backgroundColor: 'rgba(75, 192, 192, 0.2)',
   borderColor:'rgba(75, 192, 192, 1)',
   borderWidth: 1,
@@ -59,7 +59,7 @@ options: aChartOptions
 
 var pdMethodCanvas = document.getElementById("pd-method");
 var coaching = {
-  label: 'Coaching Conversations',
+  label: ' Coaching Conversations',
   data: [1, 4, 4, 10, 9],
   backgroundColor: 'rgba(75, 192, 192, 0.2)',
   borderColor:'rgba(75, 192, 192, 1)',
